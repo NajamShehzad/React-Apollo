@@ -22,12 +22,16 @@ class BookList extends Component {
     renderBooks = () => {
         let data = this.props.data;
         if (data.loading) {
-            return <div>Loading..</div>
+            return <div>Loading...</div>
         } else {
             return (
                 <ul>
                     {data.books.map(bookData => {
-                        return <li key={bookData._id}>{bookData.name}</li>
+                        return (
+                            <li key={bookData._id}>
+                                {bookData.name}
+                            </li>
+                        )
                     })}
                 </ul>
             )
