@@ -20,7 +20,7 @@ class BookList extends Component {
             return <div>Loading...</div>
         } else {
             return (
-                <ul>
+                <ul id="book-list" >
                     {data.books.map(bookData => {
                         return (
                             <li onClick={(e) => this.setState({ selected: bookData._id })} key={bookData._id}>

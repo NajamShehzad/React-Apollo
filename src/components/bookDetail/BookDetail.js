@@ -10,9 +10,9 @@ class BookDetails extends Component {
         if (book) {
             return (
                 <div>
-                    <p>
+                    <h2>
                         {book.name}
-                    </p>
+                    </h2>
                     <p>
                         {book.genre}
                     </p>
@@ -30,7 +30,7 @@ class BookDetails extends Component {
                 </div>
             )
         } else {
-            return null
+            return <div>No Book Selected</div>
         }
     }
 
@@ -39,9 +39,6 @@ class BookDetails extends Component {
         console.log(this.props);
         return (
             <div id="book-details">
-                <p>
-                    Book Deatils Here...
-                </p>
                 {this.displayBookDetails()}
             </div>
         )

@@ -81,7 +81,7 @@ class AddBook extends Component {
                     </div>
                     <div>
                         <button type="submit" >
-                            Add Book
+                            +
                         </button>
                     </div>
                 </form>
