@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <ApolloProvider client={client} >
-        <div >
+        <div style={{padding:50}} >
           <h1>
             Apollo
         </h1>
